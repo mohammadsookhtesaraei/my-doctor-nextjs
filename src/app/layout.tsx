@@ -6,6 +6,7 @@ const vazirmatn = Vazirmatn({
   display: "swap",
 });
 import "./globals.css";
+import Layout from "@/components/layout/Layout";
 
 export const metadata: Metadata = {
   title: "دکتر من",
@@ -19,7 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fa" dir="rtl" className={vazirmatn.className}>
-      <body>{children}</body>
+      <body>
+        <Layout>{children}</Layout>
+      </body>
     </html>
   );
 }
